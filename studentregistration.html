@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="split left">
+        <h1>Student Registaration Form</h1>
+        <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input required type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label  for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input required type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input required type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input required type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="Website">Website:</label>
+                </div>
+                <div class="col-90">
+                    <input required type="link" id="website" name="Website" placeholder="www.example.com">
+                </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="specialization">Skill:</label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Java">Java<br/>
+                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="C++">C++<br/>
+                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Python">Python<br/>
+                    
+                </div>
+            </div>
+           
+            
+            
+            <div class="row">
+                <button type="submit" value="Enroll" onclick="FormSumbit()">Enroll</button>
+            </div>  
+        </div>  
+    </form>
+
+    </div>
+    <div class="split right">
+        <h1>Student Data</h1>
+        <div id="students">
+    
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
